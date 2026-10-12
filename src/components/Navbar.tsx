@@ -27,7 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onNavigate }) => {
             Soumya Ranjan Satapathy
           </button>
           <span className="hidden sm:block text-xs font-mono text-slate-500">
-            Module Lead · 7+ Years Exp · Real-Time Systems
+            Module Lead · 7+ Years Exp · Front-end Specialist
           </span>
         </div>
 
@@ -78,7 +78,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onNavigate }) => {
                 }`}
                 title="Loupe - Accessibility Checker"
               >
-                <Search className="w-4 h-4 inline" />
                 Loupe
               </button>
             </nav>

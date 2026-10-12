@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chrome, ArrowRight, WifiOff, EyeOff, Cpu, ExternalLink } from 'lucide-react';
+import { ArrowRight, WifiOff, EyeOff, Cpu, Clock } from 'lucide-react';
 
 export const Loupe: React.FC = () => {
   return (
@@ -13,12 +13,15 @@ export const Loupe: React.FC = () => {
                 Logo
               </div>
               <div>
-                <h2 className="text-xl font-extrabold tracking-tight text-slate-900">
-                  Loupe by SR
-                </h2>
+                <div className="flex items-center gap-2.5">
+                  <h2 className="text-xl font-extrabold tracking-tight text-slate-900">
+                    Loupe by SR
+                  </h2>
+                </div>
               </div>
             </div>
 
+            {/* Original Chrome Web Store button removed until live:
             <a
               href="https://chromewebstore.google.com"
               target="_blank"
@@ -28,22 +31,31 @@ export const Loupe: React.FC = () => {
               <Chrome className="w-4 h-4" />
               <span>View On Chrome Web Store</span>
             </a>
+            */}
           </div>
 
           {/* Overview details */}
-          <div className="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-            <p>
-              Loupe is a deterministic, local-first web accessibility evaluation Chrome Extension engineered to bridge the critical gap between accessibility violation discovery and code remediation.
-            </p>
-            <p>
-              The idea was born out of a major engineering frustration: traditional audit tools flood developers with abstract, cluttered lists of errors without showing where defects live on the live page, forcing teams to manually decipher cryptic logs and craft prompts from scratch.
-            </p>
-            <p>
-              Loupe solves this by operating natively within Google Chrome via the Side Panel API and DevTools, projecting non-destructive visual overlay boundaries over live DOM trees in real-time.
-            </p>
-            <p>
-              Powered by axe-core, it translates complex engine logs into plain-language impact breakdowns and features a built-in AI remediation generator that transfers structured, context-aware fix prompts directly into AI coding assistants — all with 100% local-first data privacy and zero telemetry.
-            </p>
+          <div className="relative rounded-xl p-4 bg-slate-50/50 border border-slate-200/60 overflow-hidden">
+            <div className="absolute top-3 right-3 z-10">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider font-mono bg-slate-200/80 text-slate-700 border border-slate-300">
+                Coming Soon
+              </span>
+            </div>
+
+            <div className="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed pr-24 sm:pr-28">
+              <p>
+                Loupe is a deterministic, local-first web accessibility evaluation Chrome Extension engineered to bridge the critical gap between accessibility violation discovery and code remediation.
+              </p>
+              <p>
+                The idea was born out of a major engineering frustration: traditional audit tools flood developers with abstract, cluttered lists of errors without showing where defects live on the live page, forcing teams to manually decipher cryptic logs and craft prompts from scratch.
+              </p>
+              <p>
+                Loupe solves this by operating natively within Google Chrome via the Side Panel API and DevTools, projecting non-destructive visual overlay boundaries over live DOM trees in real-time.
+              </p>
+              <p>
+                Powered by axe-core, it translates complex engine logs into plain-language impact breakdowns and features a built-in AI remediation generator that transfers structured, context-aware fix prompts directly into AI coding assistants — all with 100% local-first data privacy and zero telemetry.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -53,7 +65,7 @@ export const Loupe: React.FC = () => {
         <div className="glass-panel rounded-2xl p-5 shadow-xs border border-slate-200/90">
           <div className="w-full h-64 sm:h-80 md:h-96 rounded-xl border border-dashed border-slate-300 bg-slate-50/60 flex items-center justify-center p-6 text-center">
             <span className="text-base sm:text-lg font-medium text-slate-400">
-              Screenshot of the extension running
+              Coming Soon
             </span>
           </div>
         </div>
@@ -62,9 +74,11 @@ export const Loupe: React.FC = () => {
       {/* 3. Core Workflow Box */}
       <div>
         <div className="glass-panel rounded-2xl p-5 shadow-xs border border-slate-200/90">
-          <h3 className="font-bold text-base text-slate-900 pb-3 border-b border-slate-200 mb-4 text-center">
-            Core Workflow
-          </h3>
+          <div className="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
+            <h3 className="font-bold text-base text-slate-900">
+              Core Workflow
+            </h3>
+          </div>
 
           {/* Flow Diagram */}
           <div className="space-y-3">
@@ -109,35 +123,44 @@ export const Loupe: React.FC = () => {
 
       {/* 4. Features Section: Visual Overlay Engine + AI Fix Prompt Generator */}
       <div>
-        <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight mb-5">
-          Features
-        </h3>
+        <div className="flex items-center justify-between mb-5">
+          <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">
+            Features
+          </h3>
+          <span className="text-[10px] font-bold uppercase font-mono px-2 py-0.5 rounded bg-slate-100 text-slate-600 border border-slate-200">
+            Coming Soon
+          </span>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Feature 1: Visual Overlay Engine (Placeholder) */}
           <div className="glass-panel rounded-2xl p-5 shadow-xs space-y-4 border border-slate-200/90">
-            <h4 className="font-bold text-base text-slate-900">
-              Visual Overlay Engine
-            </h4>
+            <div className="flex items-center justify-between">
+              <h4 className="font-bold text-base text-slate-900">
+                Visual Overlay Engine
+              </h4>
+            </div>
 
             {/* Screenshot Placeholder */}
             <div className="w-full h-52 sm:h-60 rounded-xl border border-dashed border-slate-300 bg-slate-50/60 flex items-center justify-center text-center">
               <span className="text-sm font-medium text-slate-400">
-                Screenshot
+                Coming Soon
               </span>
             </div>
           </div>
 
           {/* Feature 2: AI Fix Prompt Generator (Placeholder) */}
           <div className="glass-panel rounded-2xl p-5 shadow-xs space-y-4 border border-slate-200/90">
-            <h4 className="font-bold text-base text-slate-900">
-              AI Fix Prompt Generator
-            </h4>
+            <div className="flex items-center justify-between">
+              <h4 className="font-bold text-base text-slate-900">
+                AI Fix Prompt Generator
+              </h4>
+            </div>
 
             {/* Screenshot Placeholder */}
             <div className="w-full h-52 sm:h-60 rounded-xl border border-dashed border-slate-300 bg-slate-50/60 flex items-center justify-center text-center">
               <span className="text-sm font-medium text-slate-400">
-                Screenshot
+                Coming Soon
               </span>
             </div>
           </div>
@@ -196,8 +219,9 @@ export const Loupe: React.FC = () => {
       <div className="glass-panel rounded-xl p-4 px-6 border border-slate-200/90 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm font-semibold text-slate-600 gap-2 shadow-xs">
         <div>Developed by Soumya Ranjan S.</div>
         <div className="font-mono text-xs px-2.5 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600">
-          Version 1.0
+          Coming Soon · v1.0
         </div>
+        {/* Original link removed until live:
         <a
           href="https://chromewebstore.google.com"
           target="_blank"
@@ -206,6 +230,10 @@ export const Loupe: React.FC = () => {
         >
           Find Loupe on Chrome Web Store <ExternalLink className="w-3.5 h-3.5" />
         </a>
+        */}
+        <div className="text-slate-400 font-normal italic">
+          Chrome Web Store listing coming soon
+        </div>
       </div>
     </div>
   );
