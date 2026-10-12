@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Linkedin, Github, ExternalLink, CheckCircle, Send, Loader2 } from 'lucide-react';
+import { Mail, Linkedin, Github, ExternalLink, CheckCircle, Send, Loader2 } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [formState, setFormState] = useState({
@@ -80,24 +80,6 @@ export const Contact: React.FC = () => {
                 </span>
                 <span className="text-sm sm:text-base font-semibold text-slate-900 group-hover:text-slate-900 transition">
                   ssranjan.ak@gmail.com
-                </span>
-              </div>
-            </a>
-
-            {/* Contact number */}
-            <a
-              href="tel:+917653990049"
-              className="flex items-start gap-3.5 p-3.5 rounded-xl glass-panel border border-slate-200/90 hover:border-slate-400 hover:shadow-md transition group"
-            >
-              <div className="w-8 h-8 border border-slate-200 rounded-lg flex items-center justify-center bg-slate-50 group-hover:border-slate-400 group-hover:bg-slate-100 transition">
-                <Phone className="w-4 h-4 text-slate-600 group-hover:text-slate-900 transition" />
-              </div>
-              <div>
-                <span className="block text-xs font-semibold text-slate-500 uppercase tracking-wide">
-                  Contact number
-                </span>
-                <span className="text-sm sm:text-base font-semibold text-slate-900 group-hover:text-slate-900 transition">
-                  +91 7653990049
                 </span>
               </div>
             </a>

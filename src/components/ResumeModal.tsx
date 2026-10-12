@@ -51,7 +51,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Module Lead | Senior Software Engineer | Angular Specialist | Real-Time Systems (RxJS, Pusher.js, WebSockets)
             </p>
             <p className="text-[11px] text-slate-500 mt-1">
-              Bhubaneswar, Odisha | +91 7653990049 | ssranjan.ak@gmail.com | Open to relocation: Bangalore, Pune
+              Bhubaneswar, Odisha | ssranjan.ak@gmail.com | Open to relocation: Bangalore, Pune
             </p>
           </div>
 
